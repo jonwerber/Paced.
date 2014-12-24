@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#7fc3ffff"
+    android:screenOrientation="portrait"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:id="@+id/topRunning"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/runningTop"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#af70ab29"
+                android:id="@+id/milesToGo"
+                android:text="# MILES"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:id="@+id/centerRunning"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/runningCenter"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/Inconsolata.otf"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#d2e5c036"
+                android:id="@+id/timer"
+                android:text="TIMER"
+                android:textColor="#d2b19429" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:id="@+id/bottomRunning"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/runningBottom"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#fff87044"
+                android:id="@+id/paceSoFar"
+                android:text="# MILES"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

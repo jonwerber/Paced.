@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#7fc3ffff"
+    android:screenOrientation="portrait"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="right"
+        android:id="@+id/first"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+            android:id="@+id/top"
+
+            android:orientation="vertical">
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:layout_width="100dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:id="@+id/more"
+                android:text="MORE"
+                android:textColor="#ffffff"
+                android:background="#c6466c1b" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/measure"
+
+                android:orientation="horizontal"
+                android:background="#af70ab29">
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:textSize="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:id="@+id/distance"
+                android:text="1.0"
+                android:textColor="#fff"
+                android:gravity="center" />
+                <com.mobsandgeeks.ui.TypefaceTextView
+                    geekui:customTypeface="fonts/RalewayThin.otf"
+                    android:textSize="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:id="@+id/unitOne"
+                    android:text=" Miles"
+                    android:textColor="#fff"
+                    android:gravity="center" />
+                <com.mobsandgeeks.ui.TypefaceTextView
+                    geekui:customTypeface="fonts/RalewayThin.otf"
+                    android:textSize="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:id="@+id/unitTwo"
+                    android:text=" Km"
+                    android:textColor="#c6466c1b"
+                    android:gravity="center" />
+                </LinearLayout>
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:layout_width="100dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:background="#7a7ec132"
+                android:id="@+id/less"
+                android:text="LESS"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="right"
+        android:id="@+id/second"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:id="@+id/bottom"
+
+            android:orientation="vertical">
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#d2b19429"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:id="@+id/faster"
+                android:text="SLOWER"
+                android:textColor="#fff" />
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:background="#d2e5c036"
+                android:id="@+id/pace"
+                android:textColor="#fff"
+                android:text="7:00" />
+            <com.mobsandgeeks.ui.TypefaceTextView
+                geekui:customTypeface="fonts/RalewayThin.otf"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/slower"
+                android:text="FASTER"
+                android:textColor="#fff"
+                android:background="#b2efc938" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/go"
+
+        android:orientation="horizontal">
+        <com.mobsandgeeks.ui.TypefaceTextView
+            geekui:customTypeface="fonts/RalewayThin.otf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff87044"
+            android:id="@+id/goText"
+            android:textSize="50dp"
+
+            android:gravity="center_vertical|right"
+            android:textColor="#fff"
+            android:text="Run"
+            android:onClick="runNow"
+            android:paddingRight="10dp"
+            />
+        />
+    </LinearLayout>
+
+
+</LinearLayout>
